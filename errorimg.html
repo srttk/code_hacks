@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+/*
+Author  : Sarath
+
+Use $('.trigger').makeToggle('.ToggleElem');
+
+*/
+
+(function($){
+	$.fn.errorImg=function(imgSrc){
+			$(this).error(function(){
+			$(this).attr('src',imgSrc);
+			$(this).attr('alt',"Error loading image ");
+			return this;
+		});
+})(jQuery);
+
+$(function(){
+	$('img').errorImg("dfsdfjsdfj");
+});
+</script>
+<label class="toggle"><strong>Trigger Toggle</strong></label>
+<p class="content">
+<img src="fsdf.jpg">
+</body>
+</html>

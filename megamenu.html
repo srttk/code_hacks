@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mega menu</title>
+<script type="text/javascript" src="jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://www.javascriptkit.com/script/script2/jkmegamenu.css" />
+
+<script type="text/javascript" src="jkmegamenu.js">
+
+</script>
+
+<script type="text/javascript">
+
+//jkmegamenu.definemenu("anchorid", "menuid", "mouseover|click")
+jkmegamenu.definemenu("megaanchor", "megamenu1", "mouseover")
+
+</script>
+
+</head>
+<body>
+<!--Mega Menu Anchor-->
+<input  id="megaanchor" type="text" />
+
+
+
+<!--Mega Drop Down Menu HTML. Retain given CSS classes-->
+<div id="megamenu1" class="megamenu">
+
+<div class="column">
+	<h3>Web Development</h3>
+	<ul>
+	<li><a >JavaScript Kit</a></li>
+	<li><a >Dynamic Drive</a></li>
+	<li><a >CSS Drive</a></li>
+	<li><a >Coding Forums</a></li>
+	<li><a >DOM Reference</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<h3>News Related</h3>
+	<ul>
+	<li><a >CNN</a></li>
+	<li><a >MSNBC</a></li>
+	<li><a >Google</a></li>
+	<li><a >BBC News</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<h3>Technology</h3>
+	<ul>
+	<li><a >News.com</a></li>
+	<li><a >SlashDot</a></li>
+	<li><a >Digg</a></li>
+	<li><a >Tech Crunch</a></li>
+	</ul>
+</div>
+
+<br style="clear: left" /> <!--Break after 3rd column. Move this if desired-->
+
+<div class="column">
+	<h3>Web Development</h3>
+	<ul>
+	<li><a >JavaScript Kit</a></li>
+	<li><a >Dynamic Drive</a></li>
+	<li><a >CSS Drive</a></li>
+	<li><a >Coding Forums</a></li>
+	<li><a >DOM Reference</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<h3>News Related</h3>
+	<ul>
+	<li><a >CNN</a></li>
+	<li><a >MSNBC</a></li>
+	<li><a >Google</a></li>
+	<li><a >BBC News</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<h3>Technology</h3>
+	<ul>
+	<li><a >News.com</a></li>
+	<li><a >SlashDot</a></li>
+	<li><a >Digg</a></li>
+	<li><a >Tech Crunch</a></li>
+	</ul>
+</div>
+
+</div>
+</body>
+
+<script type="text/javascript">
+var j=jQuery.noConflict();
+j(function(){
+	j(".megamenu ul li a").click(function(){
+		var sel=j(this).text();
+		j("#megaanchor").val(sel);
+	});
+});
+</script>
+</html>
