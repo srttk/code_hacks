@@ -1,4 +1,6 @@
 <?php
+
+/* Get Real IP */
 function get_ip() {
     $ipaddress = '';
     if (getenv('HTTP_CLIENT_IP'))
