@@ -21,6 +21,7 @@ function get_ip() {
     return $ipaddress;
 }
 
+/* Convert IPV4To6 */
 function IPv4To6($ip) {
  if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) === true) {
   if (strpos($ip, '.') > 0) {
@@ -37,7 +38,7 @@ function IPv4To6($ip) {
     return '::ffff:'.$Part7.':'.$Part8;
 }
 
-
+/* Geo location library */
 class geolib{
 
 	private $api_url="http://ipinfo.io/";
