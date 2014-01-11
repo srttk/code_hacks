@@ -39,6 +39,9 @@ function IPv4To6($ip) {
 }
 
 /* Geo location library */
+/*
+ Using a thirdparty JSON Api provider
+*/
 class geolib{
 
 	private $api_url="http://ipinfo.io/";
